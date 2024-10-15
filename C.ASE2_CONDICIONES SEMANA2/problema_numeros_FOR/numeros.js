@@ -5,5 +5,9 @@ Use ciclo for
 3 x 1
 */
 
-let numero = 50;
-for(let index = 0; index < )
+let numero = 0;
+for(let index = 10; index < numero; index++){
+    console.log(numero);
+    numero++;
+    
+}//REVISAR EJERICICO
