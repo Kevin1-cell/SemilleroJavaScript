@@ -18,5 +18,6 @@ let producto = numero1 * numero2;
 let modulo = numero1 % numero2;
 let cociente = numero1 / numero2;
 alert("Los resultado de "+numero1+" y "+numero2+" es: \nSuma: "+suma+"\nResta: "+resta+
-    "\nProducto: "+producto+"\nModulo: "+modulo+"\nCociente: "+cociente);
+    "\nProducto: "+producto+"\nModulo: "+modulo+"\nCociente: "+cociente
+);
 
