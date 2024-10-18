@@ -21,7 +21,7 @@ while(isNaN(meses)){
 let impuestoMensual = precio * 0.05;
 let cuotasMensuales = precio / meses + (meses + impuestoMensual);
 let valorTotal = precio + (impuestoMensual * meses) 
-alert("El valor fijo de las cuotas mensuales es de: "+cuotasMensuales.toFixed(3)+"\nEl total del credito sería de: "+valorTotal+"\nImpuesto por mes cobrado: "+impuestoMensual)
+alert("El valor fijo de las cuotas mensuales es de: "+cuotasMensuales.toFixed(3 )+"\nEl total del credito sería de: "+valorTotal+"\nImpuesto por mes cobrado: "+impuestoMensual)
 
 
 
