@@ -24,8 +24,5 @@ switch(nombre){
         break;
     default:
         console.log("Este producto no corresponde a los disponibles");
-        
-
-        
 
 }
