@@ -5,9 +5,7 @@ Use ciclo for
 3 x 1
 */
 
-let numero = 0;
-for(let index = 10; index < numero; index++){
-    console.log(numero);
-    numero++;
-    
-}//REVISAR EJERICICO
+
+for(let index = 0; index <= 50; index++){
+    console.log("3*"+index+"= "+(3*index));
+}
