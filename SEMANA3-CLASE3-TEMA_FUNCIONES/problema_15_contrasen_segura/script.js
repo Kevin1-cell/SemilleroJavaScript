@@ -1,32 +1,21 @@
 /*
-Escriba una función la cual reciba como parámetro 2 números enteros y 1 cadena,
-La idea es que los números recibidos se puedan operar según la operación que
-hallamos recibido en la cadena, ejemplo miFuncion(2, 5, ”suma”).
+15) Escriba una función generarContraseña la cual reciba n como parámetro y esta cree
+una contraseña de n caracteres aleatorios. (Los caracteres pueden ser números,
+letras o signos).
 */
 
-let numeroUno = parseInt(prompt("Ingrese un numero"));
-let numeroDos = parseInt(prompt("Ingrese un numero"));
+function generarContraseña (n){
+    let caracteres = "ABCDETYLDKLJaskdnkweifn!$%#/&/()=";
+    let contrasena = "";
 
-let cadena = prompt("Ingrese la operación que desea realizar");
+    for(let i = 0; i < n; i++){
+        const valoresAleatorios = Math.floor(Math.random()*caracteres.length);
+        contrasena += caracteres[valoresAleatorios];
+    }
 
-let operacion = cadena.toLocaleLowerCase();
-switch (operacion) {
-  case "suma":
-    let suma = numeroDos + numeroUno;
-    console.log("La suma es ", suma);
-    break;
-  case "resta":
-    let resta = numeroUno - numeroDos;
-    console.log("La resta es ", resta);
-    break;
-  case "multiplicacion":
-    let multiplicacion = numeroDos * numeroUno;
-    console.log("La multiplicacion es ", multiplicacion);
-    break;
-  case "division":
-    let division = numeroDos / numeroUno;
-    console.log("La division es ", division);
-    break;
-  default:
-    alert("Ingrese una operacion valida");
+    console.log(contrasena);
+    return contrasena;
 }
+
+let n = parseInt(prompt("Ingrese el numero de caracteres que quiere que tenga la contraseña"));
+generarContraseña(n);
