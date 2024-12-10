@@ -1,13 +1,17 @@
-/*
-1. Escribe una función sumar que reciba dos números y un callback. El callback debe
-ser ejecutado con el resultado de la suma.
-*/
+/**
+ * Escribe una función sumar que reciba dos números y un callback. El callback debe
+ * ser ejecutado con el resultado de la suma.
+ */
 
-function sumar(a, b, callback) {
-  const resultado = a + b;
-  callback(resultado);
+//Funciones de orden superior
+//función que recibe otra función como
+//argumento
+
+const sumar = (a, b) => a + b;
+
+function sumaPrincipal(a, b, callback) {
+  let resultado = callback(a, b);
+  console.log(`El resultado es: ${resultado}`);
 }
 
-sumar(5, 3, function (resultado) {
-  console.log("El resultado de la suma es:", resultado);
-});
+sumaPrincipal(1, 6, sumar);
